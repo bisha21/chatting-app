@@ -1,51 +1,50 @@
-# Chatting App 💬
+# 💬 Chatting App
 
-A full-stack real-time chatting application built with **TypeScript**, **Express**, **Prisma**, and **Socket.IO** for the backend, and **React**, **TanStack Query**, **Shadcn UI**, and **Tailwind CSS** for the frontend.  
+A **real-time chatting application** built with **TypeScript**, **Express**, **Prisma**, and **Socket.IO** for the backend, and **React**, **TanStack Query**, **Shadcn UI**, and **Tailwind CSS** for the frontend.  
 
-This app allows users to register, log in, and chat in real-time, with secure authentication using **JWT** and password hashing via **bcrypt**.
-
----
-
-## Features
-
-### Backend
-- **Express.js** server with TypeScript
-- **Prisma ORM** connected to PostgreSQL for data modeling
-- **Socket.IO** for real-time messaging
-- **JWT authentication** for secure login
-- **bcrypt** for password hashing
-- **Cookie-parser** to manage authentication tokens
-- RESTful API endpoints for user and message management
-- Automatically tracks **message seen status** and timestamps
-
-### Frontend
-- **React** with TypeScript
-- **TanStack Query** for server-state management
-- **Shadcn UI** for modern components
-- **Tailwind CSS** for styling
-- Real-time messaging interface with online/offline status
-- Search users and chat history
-- Responsive design for desktop and mobile
+Chat with your friends instantly, with secure authentication and modern UI.
 
 ---
 
-## Tech Stack
+## 🚀 Features
 
-**Backend:**  
-- Node.js, Express, TypeScript  
-- Prisma ORM (PostgreSQL)  
-- Socket.IO  
-- JWT, bcrypt, cookie-parser  
-
-**Frontend:**  
-- React, TypeScript  
-- TanStack Query  
-- Shadcn UI  
-- Tailwind CSS  
+- **Real-time messaging** with Socket.IO  
+- **User authentication** using JWT & bcrypt  
+- **Profile management**: upload image, edit bio  
+- **Message seen status** & timestamps  
+- **Search users** and chat history  
+- **Responsive design** for desktop & mobile  
 
 ---
 
-## Installation
+## 🛠️ Tech Stack
+
+**Backend**  
+
+| Technology      | Description                               |
+|----------------|-------------------------------------------|
+| Node.js         | Runtime environment                        |
+| Express.js      | Web framework                              |
+| TypeScript      | Type-safe JavaScript                        |
+| Prisma          | ORM for PostgreSQL                          |
+| Socket.IO       | Real-time communication                     |
+| JWT             | Authentication tokens                       |
+| bcrypt          | Password hashing                            |
+| cookie-parser   | Manage authentication cookies               |
+
+**Frontend**  
+
+| Technology      | Description                               |
+|----------------|-------------------------------------------|
+| React           | Frontend framework                          |
+| TypeScript      | Type-safe React                              |
+| TanStack Query  | Server-state management                     |
+| Shadcn UI       | Modern React components                      |
+| Tailwind CSS    | Utility-first CSS framework                  |
+
+---
+
+## 💻 Installation
 
 ### Backend
 ```bash
