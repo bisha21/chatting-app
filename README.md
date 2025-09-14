@@ -38,8 +38,6 @@ Chat with your friends instantly, with secure authentication and modern UI.
 |----------------|-------------------------------------------|
 | React           | Frontend framework                          |
 | TypeScript      | Type-safe React                              |
-| TanStack Query  | Server-state management                     |
-| Shadcn UI       | Modern React components                      |
 | Tailwind CSS    | Utility-first CSS framework                  |
 
 ---
