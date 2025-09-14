@@ -13,27 +13,24 @@ export const io = new Server(server, {
   cors: {
     origin: '*',
     methods: ['GET', 'POST'],
+    credentials: true, // allow cookies/auth headers
   },
 });
 
-export const userSocketMap = {};
-// {userId: socketId}
+export const userSocketMap: Record<string, string> = {};
 
 io.on('connection', (socket) => {
-  const userId = socket.handshake.query.userId;
+  const userId = socket.handshake.query.userId as string;
 
-  console.log('a user connected',userId);
-  if(userId)
-  {
-    // @ts-ignore
-    userSocketMap[userId] = socket.id
+  console.log('a user connected', userId);
+  if (userId) {
+    userSocketMap[userId] = socket.id;
   }
 
   io.emit('getOnlineUsers', Object.keys(userSocketMap));
 
   socket.on('disconnect', () => {
-    console.log('user disconnected');
-    // @ts-expect-error
+    console.log('user disconnected', userId);
     delete userSocketMap[userId];
     io.emit('getOnlineUsers', Object.keys(userSocketMap));
   });
